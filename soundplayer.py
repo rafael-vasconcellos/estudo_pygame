@@ -92,11 +92,9 @@ stop = rect(
 )
 
 
-
-
 pygame.init()
 tela = pygame.display.set_mode((width, height))
-pygame.display.set_caption('Título')
+pygame.display.set_caption('soundplayer')
 text_f1 = pygame.font.SysFont('arial', 40)
 
 clock = pygame.time.Clock()
@@ -106,6 +104,8 @@ soup = BeautifulSoup(html, "html.parser")
 urllib.request.urlretrieve(  soup.find(id="download-url").get('href'), "guignol.mp3"  )
 pygame.mixer.music.load("guignol.mp3", "mp3")
 # https://anonfiles.com/S4Dbs8m3zd/guignol_mp3
+
+
 
 
 while True:

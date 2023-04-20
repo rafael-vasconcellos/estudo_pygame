@@ -12,21 +12,19 @@ class rect():
         self.width = 50
         self.height = 50
 
-
 width = 640
 height = 480
 box = rect((255, 0, 0), (320, 0))
 box2 = rect((255, 255, 0), (width*0.75, height*0.75))
 
-
-
-
 pygame.init()
 tela = pygame.display.set_mode((width, height))
-pygame.display.set_caption('Título')
+pygame.display.set_caption('Control')
 text_f1 = pygame.font.SysFont('arial', 40)
 
 clock = pygame.time.Clock()
+
+
 
 
 while True:

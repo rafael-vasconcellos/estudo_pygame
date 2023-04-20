@@ -15,15 +15,14 @@ width = 640
 height = 480
 box = rect((255, 0, 0), (320, 0))
 
-
-
-
 pygame.init()
 tela = pygame.display.set_mode((width, height))
-pygame.display.set_caption('Título')
+pygame.display.set_caption('Moving')
 text_f1 = pygame.font.SysFont('arial', 40)
 
 clock = pygame.time.Clock()
+
+
 
 
 while True:
@@ -37,7 +36,7 @@ while True:
     pygame.draw.rect(tela, box.color, (box.x, box.y, box.width, box.height))
     box.y += 1
     
-    tela.blit(text_f1.render("moving", True, (255,255,255)), (width/2-50, 10))
+    tela.blit(text_f1.render("Moving", True, (255,255,255)), (width/2-50, 10))
     
     pygame.display.update()    
     if box.y > height:
