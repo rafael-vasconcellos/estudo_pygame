@@ -13,6 +13,7 @@ print(QUIT)
 
 
 while True:
+    tela.fill( (0,0,0) )
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
