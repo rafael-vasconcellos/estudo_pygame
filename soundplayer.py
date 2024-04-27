@@ -105,6 +105,14 @@ urllib.request.urlretrieve(  soup.find(id="download-url").get('href'), "guignol.
 pygame.mixer.music.load("guignol.mp3", "mp3")
 # https://anonfiles.com/S4Dbs8m3zd/guignol_mp3
 
+# music control methods
+# pygame.mixer.music.load('')
+# pygame.mixer.music.set_volume(0.4)
+# pygame.mixer.music.play(-1)
+
+# efeito = pygame.mixer.Sound('')
+# efeito.set_volume(0.5)
+# efeito.play()
 
 
 
